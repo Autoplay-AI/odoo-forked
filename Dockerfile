@@ -74,4 +74,4 @@ USER odoo
 WORKDIR /opt/odoo
 
 # Start Odoo with environment variables for PostgreSQL credentials
-CMD ["/opt/odoo/venv/bin/python", "/opt/odoo/odoo-bin", "--addons-path=/opt/odoo/addons", "-d", "odoo", "--db_host=dpg-csblpqlds78s73ba4520-a", "--db_user=odoo", "--db_password=sNw9kAStYUtkloLU3RhcSbQ9B2HeN9Jc", "--db_port=5432", "--db-filter=^odoo$", "-i", "base", "--db_name=odoo_pm4h"]
+CMD ["/opt/odoo/venv/bin/python", "/opt/odoo/odoo-bin", "--addons-path=/opt/odoo/addons", "-d", "odoo_pm4h", "--db_host=dpg-csblpqlds78s73ba4520-a", "--db_user=odoo", "--db_password=sNw9kAStYUtkloLU3RhcSbQ9B2HeN9Jc", "--db_port=5432", "--db-filter=^odoo_pm4h$", "-i base"]
